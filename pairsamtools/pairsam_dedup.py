@@ -164,7 +164,6 @@ def dedup_py(pairsam_path, output, output_dups,
         outstream_dups.writelines((l+'\n' for l in header))
     
     if lite:
-       print("Dedup lite working!")
        n_dups, n_nodups = streaming_dedup_lite(
            method, max_mismatch, sep,
            c1, c2, p1, p2, s1, s2,
